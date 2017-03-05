@@ -61,19 +61,24 @@ function routage(){
     }
 }
 
-//Doit être repensé
 /**
+ * template renvoie le model de page correspondant à la demande de l'utilisateur
+ * @return [string] le chemin du template à renvoyer
+ */
 function template(){
 
     $forms = ['register','login','forgot','reset','reactive'];
     $account = ['account','settings','admin'];
 
-    if (in_array($p, $form_pages)) {
-        require 'pages/templates/fullscreen.php';
-    } elseif ($p === 'account') {
-        require 'pages/templates/connected.php';
+    if (isset($_GET['p'])) {
+        $page = htmlentities($_GET['p']);
+    }
+
+    if (in_array($page, $forms)) {
+        return 'pages/templates/fullscreen.php';
+    } elseif ($page === 'account') {
+        return 'pages/templates/connected.php';
     } else {
-        require 'pages/templates/default.php';
+        return 'pages/templates/default.php';
     }
 }
-*/
