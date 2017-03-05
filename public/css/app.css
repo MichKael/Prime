@@ -1,0 +1,23 @@
+html,body{
+	padding: 0;
+	margin: 0;
+	font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+}
+
+.wrapper{
+	margin: 0 auto;
+	padding: 100px;
+}
+
+.wrapper h1{
+	font-size: 72px;
+	text-align: center;
+	font-weight: lighter;
+	font-family: Helvetica;
+}
+
+.wrapper p{
+	font-size: 28px;
+	margin: 0 100px;
+	text-align: center;
+}
