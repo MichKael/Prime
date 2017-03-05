@@ -16,6 +16,13 @@ html,body{
 	font-family: Helvetica;
 }
 
+.wrapper h2{
+	font-size: 60px;
+	text-align: center;
+	font-weight: lighter;
+	font-family: Helvetica;
+}
+
 .wrapper p{
 	font-size: 28px;
 	margin: 0 100px;
