@@ -10,6 +10,7 @@ function projet_name($name = 'Prime Framework'){
  */
 function page_title(){
 
+    #ajouter les pages et le texte à afficher
     $titles = [
     "home" => "Accueil",
     "404" => "Page not found",
@@ -30,6 +31,15 @@ function page_title(){
         return $title = "Accueil";
     }
 
+}
+
+/**
+ * redirect permet de rediriger vers une page
+ * @param  [string] $location la page de redirection
+ * @return [string] l'entete de redirection
+ */
+function redirect($location){
+    return header("Location: ?p=$location");
 }
 
 /**
