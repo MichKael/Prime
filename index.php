@@ -9,4 +9,4 @@ ob_start();
 	routage();
 $content = ob_get_clean();
 
-require 'pages/templates/default.php';
+require template();
