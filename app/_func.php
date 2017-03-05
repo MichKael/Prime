@@ -77,6 +77,8 @@ function template(){
             return 'pages/templates/[YOUR_TEMPLATE]';
         } elseif ($page === '[YOUR_TEMPLATE]') {
             return 'pages/templates/[YOUR_TEMPLATE]';
+        } else {
+            return 'pages/templates/default.php';
         }
     } else {
         return 'pages/templates/default.php';
