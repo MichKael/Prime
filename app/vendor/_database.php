@@ -15,7 +15,11 @@ try {
     return $db;
 
 } catch (PDOException $e) {
-    
-    die('Erreur: '.$e->getMessage());
+	
+    if ($_SERVER['REMOTE_ADDR'] != '::1') {
+    	die('Erreur: connexion à la base de données interrompu');
+    }else{
+    	die('Erreur: '.$e->getMessage());
+    }
 
 }
