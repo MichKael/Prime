@@ -70,12 +70,12 @@ function template(){
     $forms = ['register','login','forgot','reset','reactive'];
     $account = ['account','settings','admin'];
 
-    if (isset($_GET['p'])) {
+    if (isset($_GET['p']) && $_GET['p'] != 'home') {
         $page = htmlentities($_GET['p']);
 
         if (in_array($page, $forms)) {
             return 'pages/templates/[YOUR_TEMPLATE]';
-        } elseif ($page === ['YOUR_TEMPLATE']) {
+        } elseif ($page === '[YOUR_TEMPLATE]') {
             return 'pages/templates/[YOUR_TEMPLATE]';
         }
     } else {
