@@ -72,12 +72,12 @@ function template(){
 
     if (isset($_GET['p'])) {
         $page = htmlentities($_GET['p']);
-    }
 
-    if (in_array($page, $forms)) {
-        return 'pages/templates/fullscreen.php';
-    } elseif ($page === 'account') {
-        return 'pages/templates/connected.php';
+        if (in_array($page, $forms)) {
+            return 'pages/templates/[YOUR_TEMPLATE]';
+        } elseif ($page === ['YOUR_TEMPLATE']) {
+            return 'pages/templates/[YOUR_TEMPLATE]';
+        }
     } else {
         return 'pages/templates/default.php';
     }

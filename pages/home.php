@@ -2,6 +2,6 @@
 	<h1>Prime.</h1>
 	
 	<p>
-		Prime is PHP Framework base on MVC design pattern and adapted for Procedural PHP programming.
+		Prime is a minimal PHP Framework base on MVC design pattern and adapted for Procedural PHP programming.
 	</p>
 </div>
