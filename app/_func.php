@@ -34,7 +34,7 @@ function page_title(){
 
 /**
  * routage permet de rediriger l'utilisateur en fonction du parametre $p passé
- * @return rien
+ * @return null
  */
 function routage(){
 
