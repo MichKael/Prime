@@ -1,12 +1,5 @@
-<!DOCTYPE html>
-<html>
-<head>
-	<title><?= $title; ?> | <?= projet_name(); ?></title>
-	<link rel="stylesheet" href="public/css/app.css">
-</head>
-<body>
+<?php require_once 'includes/header.php'; ?>
 
 <?= $content; ?>
 
-</body>
-</html>
+<?php require_once 'includes/footer.php'; ?>
